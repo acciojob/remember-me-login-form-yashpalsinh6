@@ -16,10 +16,10 @@ document.getElementById('loginform').addEventListener('submit',function(event)
 
 alert('Logged in as ' + username);
 });
-
+var btn;
 window.onload = function() {
     if (localStorage.getItem('username')) {
-        var btn = document.createElement('button');
+        btn = document.createElement('button');
         btn.id = 'existing';
         btn.textContent = 'Login as existing user';
         document.body.appendChild(btn);
