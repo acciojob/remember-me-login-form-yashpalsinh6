@@ -24,8 +24,9 @@ window.onload = function() {
         btn.textContent = 'Login as existing user';
         document.body.appendChild(btn);
     }
-};
-
-btn.addEventListener('click', function() {
+	btn.addEventListener('click', function() {
     alert('Logged in as ' + localStorage.getItem('username'));
 });
+};
+
+
